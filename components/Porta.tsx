@@ -37,4 +37,4 @@ export default function Porta(props: PortaProps) {
             <div className={styles.chao}></div>
         </div>
     )
-} /// esta tratando o evento do onChange com o onClick
+} // esta tratando o evento do onChange com o onClick

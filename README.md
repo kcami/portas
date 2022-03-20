@@ -1,8 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Esse projeto foi feito a partir das aulas da Cod3r sobre Next.js & React. 
+O intuito era recriar o jogo do Monty Hall, no qual você tem várias portas fechadas e atrás de uma delas existe um presente. Depois de selecionar uma porta, o apresentador do programa abriria uma porta vazia, e depois disso, o jogador precisa escolher qual das portas abrirá para escolher o presente.
+Foram feitas duas telas, sendo a primeira responsável por determinar quantas portas e em qual porta o prêmio estará, como pode ser visto abaixo:
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/50055369/159169879-38b0cb51-2b56-4aaa-95ae-fd482b92f9b8.png">
+</div>
+Na segunda tela, existe todas as portas determinadas e também com o presente na posição certa:
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/50055369/159170004-c279f928-7cbf-4819-a0ca-7c2fffb81673.png">
+</div>
 
+Foi criado um componente para cada necessidade do programa, como o Presente para criar com CSS um elemento parecido com um presente, a Porta para lidar com os eventos de click, abrindo ou selecionando a porta e renderizando o presente na porta correta, a EntradaNumerica que faz as operações para aumentar ou diminuir a quantidade das portas e em qual estará o presente e, por fim, o Cartao que cria com CSS uns cards (ou retângulos) com o nome do jogo e as perguntas iniciais. 
+Além disso, cada componente e cada página criada possui o seu próprio CSS.
+Com as rotas dinâmicas do Next, foi possível passar os parametros index.tsx de quantidade de portas e em qual porta da página está o presente na própria URL para ser acessado pela página que renderiza as portas [temPresente].tsx.
 ## Getting Started
 
-First, run the development server:
+Para utilizar o projeto:
+```
+$ git clone https://github.com/kcami/Site-pets.git
+
+ou
+
+Na aba do repositório do GitHub, clique no code e depois download ZIP
+
+```
+
+Depois disso, dentro da pasta criada use no terminal:
 
 ```bash
 npm run dev
@@ -10,25 +32,11 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Assim, pode-se abrir [http://localhost:3000](http://localhost:3000) com o seu browser para ver a página inicial.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Para saber mais sobre Next.js:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
