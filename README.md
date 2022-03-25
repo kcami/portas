@@ -8,7 +8,7 @@ Foram feitas duas telas, sendo a primeira responsável por determinar quantas po
 </div>
 Na segunda tela, existe todas as portas determinadas e também com o presente na posição certa:
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/50055369/159170004-c279f928-7cbf-4819-a0ca-7c2fffb81673.png" width=300px>
+    <img src="https://user-images.githubusercontent.com/50055369/159170004-c279f928-7cbf-4819-a0ca-7c2fffb81673.png" width=600px>
 </div>
 
 Foi criado um componente para cada necessidade do programa, como o Presente para criar com CSS um elemento parecido com um presente, a Porta para lidar com os eventos de click, abrindo ou selecionando a porta e renderizando o presente na porta correta, a EntradaNumerica que faz as operações para aumentar ou diminuir a quantidade das portas e em qual estará o presente e, por fim, o Cartao que cria com CSS uns cards (ou retângulos) com o nome do jogo e as perguntas iniciais. 
